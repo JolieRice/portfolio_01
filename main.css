@@ -109,3 +109,23 @@ main {
     align-items: center;
   }
 }
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(2px, -2px);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(2px, 2px);
+  }
+}
+
+/* Apply to draggable green boxes */
+.green:not(.fixed) {
+  animation: nudge 2.5s ease-in-out infinite;
+}

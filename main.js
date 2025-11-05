@@ -102,7 +102,8 @@ function drawLine(progress = 1) {
 function getScrollProgress() {
   const scrollY = window.scrollY;
   const maxScroll = document.body.scrollHeight - window.innerHeight;
-  return Math.min(1, Math.max(0, scrollY / maxScroll));
+  const slowFactor = 0.5; // smaller = slower, 1 = normal speed
+  return Math.min(1, Math.max(0, (scrollY / maxScroll) * slowFactor));
 }
 
 // Simple drag logic for green boxes
