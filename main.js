@@ -76,7 +76,7 @@ function drawOrganicLine(points, progress = 1) {
   }
 
   ctx.lineWidth = 6;
-  ctx.strokeStyle = "#0088d1";
+  ctx.strokeStyle = "#ff0000";
   ctx.lineCap = "round";
   ctx.lineJoin = "round";
 
