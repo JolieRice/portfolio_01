@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Jolie's Webpage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Connected Boxes</title>
     <link rel="stylesheet" href="main.css" />
   </head>
-</html>
-<body>
-    <h1 class="glow">Jolie's Homepage</h1>
-    <h3>Jolie's homepage for handmade web design class.</h3>
-   
-   
+  <body>
+    <header class="site-header">
+      <div class="title">stay in place</div>
+      <div class="title">stay in place</div>
+    </header>
+
+    <main>
+      <canvas id="lineCanvas"></canvas>
+
+      <div class="container">
+        <div class="left">
+          <div
+            class="photo large fixed"
+            data-label="big picture that stays in place"
+          ></div>
+          <div class="text green">text box that scrolls</div>
+        </div>
+
+        <div class="right">
+          <div class="photo" data-label="scroll"></div>
+          <div class="photo" data-label="scroll"></div>
+          <div class="photo" data-label="scroll"></div>
+          <div class="photo" data-label="scroll"></div>
+          <div class="text green large">text box that scrolls</div>
+          <div class="photo" data-label="scroll"></div>
+          <div class="photo" data-label="scroll"></div>
+          <div class="photo" data-label="scroll"></div>
+        </div>
+      </div>
+    </main>
+
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
